@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Jamie Wright's Portfolio</title>
+        <style> 
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .home {
+                background-image: url(https://i.redd.it/4w8jxyi56if41.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: rgb(17262C);
+                color: rgb(22, 37, 44);
+                min-width: 100vw;
+                min-height: 100vh;
+                
+                flex-direction: column;
+                display: flex;
+                flex: 1;
+                justify-content: flex-start;
+            }
+            .aboutMe{
+                width: 27vw;
+                margin-left: 2vw;
+                margin-top: 2vw;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #Info1 {
+                width: 310px;
+            }
+            .Projects {
+                background-color: rgb(22, 37, 44);
+                color: white;
+                flex-direction: center;
+                min-width: 100vw;
+                min-height: 150vh;
+                margin: 0;
+            }
+            .STFUSEAN{
+                font-size: 2.5em;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                margin: 0;
+            }
+            
+            
+            .alligner{
+                position: absolute;
+                width:33vw;
+                height:15vh;
+                position:fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                left: 68vw;
+                color: rgb(22, 37, 44);
+            }
+            .alligner-item--centerright {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #title {
+                font-size: 7em;
+            }
+
+            #JumpTo {
+                width: 540px;
+            }
+
+            .Projects {
+                flex-direction: column;
+                background-color: rgb(22, 37, 44);;
+            }
+            .Project1 {
+                flex-direction: row;
+                display: flex;
+                flex: 1;
+                width: 1050px;
+                height: 600px;
+                padding: 20px;
+                padding-top: 400px;
+            }
+            .Project2 {
+                flex-direction: row;
+                display: flex;
+                flex: 1;
+                width: 1050px;
+                height: 600px;
+                padding: 20px;
+            }
+            #image1 {
+                width: 600px;
+                height: 600px;
+            }
+            #Game1Desc {
+                margin-left: 20px;
+                margin-top: 100px;
+                width: 400px;
+                text-align: center;
+            }
+            #Game2Desc {
+                margin-left: 20px;
+                margin-top: 15px;
+                width: 400px;
+                text-align: center;
+            }
+            .ImgLinks
+            {
+                flex-direction: column;
+                padding-top: 200px;
+            }
+            .ContactMe{
+                width: 500px;
+                margin-left: 35vw;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #ContactMeTitle {
+                font-size: 100px;
+                color: cadetblue;
+            }
+            #needtomakebigger {
+                width: 1000px;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        <div class="alligner"> 
+            <div class="alligner-item--centerright">
+                <h1 class="STFUSEAN", id="title"> Jamie Wright </h1>
+                <p class="STFUSEAN", id="JumpTo"> About Me - Projects - Contact Me </p> 
+            </div>
+        </div>
+        <div class="home"> 
+            <div class="aboutMe">
+                <p class="STFUSEAN", id="Info1"> Game Programmer </p>
+                <p class="STFUSEAN", id="Info2"> Experience in - C++, C#, Unity. </p> 
+            </div>
+        </div>
+        <div class="Projects">  
+            <div class="Project1">
+                <img id="image1" src="Assets/game.png">
+                <p class="STFUSEAN", id="Game1Desc"> A short collaborative project where me and a partner made a small networking library from scratch, and then used it to make a small turn-based game</p>
+                <div class="ImgLinks"> 
+                    <img src="Assets/itchIcon.svg"> 
+                    <img src="Assets/githubIcon.svg">
+                </div>
+            </div>
+            <div class="Project2">
+                <img id="image1" src="Assets/game2.png">
+                <p class="STFUSEAN", id="Game2Desc"> A project spanning 6 months, where me and 11 other people (2 programmers, 3 designers, 7 artists) made a racing game. I spent my time working on anything that was required to function over a lan network and most of the game systems</p>
+                <div class="ImgLinks"> 
+                    <img src="Assets/itchIcon.svg"> 
+                    <img src="Assets/githubIcon.svg">
+                </div>
+            </div>
+        </div>
+        <div class="Projects">
+            <div class="ContactMe">
+                <p class="STFUSEAN", id="ContactMeTitle"> Contact Me </p>
+                <p class="STFUSEAN", id="needtomakebigger"> LinkedIn <img src="Assets/linkedinIcon.svg"> - https://www.linkedin.com/in/jamiewwright/</p>   <p class="STFUSEAN", id="Info2"> JamsWWstar1091@gmail.com</p>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
